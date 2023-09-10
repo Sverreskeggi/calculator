@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style/calculator.css">
+
+  <link rel="preload" href="font/Manrope/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="font/Manrope/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="font/Manrope/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script src="script/calculator.js" defer></script>
+</head>
+<body>
+  <section class="calculator-block">
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="calculator__select">
+          <p class="calculator__select-title">
+            Зарегистрировалось на вебинар:
+          </p>
+
+
+          <div class="tick-slider">
+              
+              <div class="tick-slider-background"></div>
+    
+              <div id="weightProgress" class="tick-slider-progress"></div>
+    
+              <input
+                  id="weightSlider"
+                  class="tick-slider-input"
+                  type="range"
+                  min="0"
+                  max="10"
+                  step="1"
+                  value="0"
+                  data-tick-step="5"
+                  data-tick-id="weightTicks"
+                  data-value-id="weightValue"
+                  data-progress-id="weightProgress"
+                  data-handle-size="18"
+                  data-min-label-id="weightLabelMin"
+                  data-max-label-id="weightLabelMax"
+              />
+    
+              <div class="tick-slider-value-container">
+                <div id="weightLabelMin" class="tick-slider-label">0</div>
+                <div id="weightLabelMax" class="tick-slider-label">220</div>
+                <div id="weightValue" class="tick-slider-value"></div>
+            </div>
+          </div>
+
+
+          <ul class="calculator__select-list">
+            <li class="calculator__select-item calculator__select-item_alfa10">
+              <p class="calculator__select-text">
+                Зарегистрируются на вебинар:
+              </p>
+              <p data-select-text="text" class="calculator__select-value">
+                27 чел.
+              </p>
+            </li>
+            <li class="calculator__select-item calculator__select-item_alfa20 calculator__select-item_dw460 calculator__select-item_mw240">
+              <p class="calculator__select-text">
+                Придут на вебинар:
+              </p>
+              <p class="calculator__select-value">
+                18 чел.
+              </p>
+            </li>
+            <li class="calculator__select-item calculator__select-item_alfa30 calculator__select-item_dw380 calculator__select-item_mw220">
+              <p class="calculator__select-text">
+                Сделают заказ:
+              </p>
+              <p class="calculator__select-value">
+                12 чел.
+              </p>
+            </li>
+            <li class="calculator__select-item calculator__select-item_alfa40 calculator__select-item_dw300 calculator__select-item_mw200">
+              <p class="calculator__select-text">
+                Оплатят заказ:
+              </p>
+              <p class="calculator__select-value">
+                6 чел.
+              </p>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="calculator__form">
+          <p class="calculator__form-title">
+            Сколько вы получите:
+          </p>
+          <form class="calculator__form-body" action="submit">
+            <div class="calculator__form-number">
+              <p class="calculator__form-text">
+                3 чел.
+              </p>
+              <p class="calculator__form-description">
+                итого купят
+              </p>
+            </div>
+            <div class="calculator__form-amount">
+              <p class="calculator__form-text">
+                39 000 ₽
+              </p>
+              <p class="calculator__form-description">
+                общая сумма
+              </p>
+            </div>
+          </form>
+          <button class="calculator__form-button" type="button">
+            Стать партнером
+          </button>
+          <a href="https://t.me/#" class="calculator__form-link">
+            Написать в телеграм
+            <svg class="calculator__form-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.00015" y="2" width="20" height="20" rx="5" fill="white"/>
+              <path d="M13.299 8L17 12L13.299 16M16.7101 12H7" stroke="#8F94FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </a>        
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
